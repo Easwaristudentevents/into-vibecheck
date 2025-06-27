@@ -147,20 +147,22 @@ const Index = () => {
               <p className="text-lg font-medium mb-4 text-black/80">
                 Have questions, suggestions, or need support? We're here to help!
               </p>
-              <Button 
-                onClick={() => window.open('mailto:easwaristudentevents@gmail.com', '_blank')}
-                className="bg-white/20 backdrop-blur-sm text-black border border-white/30 px-8 py-3 text-sm font-bold tracking-widest uppercase rounded-2xl hover:bg-black hover:text-white transition-all duration-300 shadow-lg mr-4"
-              >
-                <Mail className="w-4 h-4 mr-2" />
-                Email Us
-              </Button>
-              <Button 
-                onClick={() => window.open('https://instagram.com/your_instagram', '_blank')}
-                className="bg-white/20 backdrop-blur-sm text-black border border-white/30 px-8 py-3 text-sm font-bold tracking-widest uppercase rounded-2xl hover:bg-black hover:text-white transition-all duration-300 shadow-lg"
-              >
-                <Instagram className="w-4 h-4 mr-2" />
-                Instagram
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button 
+                  onClick={() => window.open('mailto:easwaristudentevents@gmail.com', '_blank')}
+                  className="bg-white/20 backdrop-blur-sm text-black border border-white/30 px-8 py-3 text-sm font-bold tracking-widest uppercase rounded-2xl hover:bg-black hover:text-white transition-all duration-300 shadow-lg flex-1 sm:flex-none"
+                >
+                  <Mail className="w-4 h-4 mr-2" />
+                  Email Us
+                </Button>
+                <Button 
+                  onClick={() => window.open('https://instagram.com/your_instagram', '_blank')}
+                  className="bg-white/20 backdrop-blur-sm text-black border border-white/30 px-8 py-3 text-sm font-bold tracking-widest uppercase rounded-2xl hover:bg-black hover:text-white transition-all duration-300 shadow-lg flex-1 sm:flex-none"
+                >
+                  <Instagram className="w-4 h-4 mr-2" />
+                  Instagram
+                </Button>
+              </div>
             </div>
             <div>
               <h3 className="text-2xl font-black mb-4 uppercase tracking-wider text-black">Feedback</h3>
